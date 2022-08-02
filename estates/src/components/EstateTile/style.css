@@ -1,0 +1,46 @@
+.estate-tile {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.estate-tile__thumb {
+  max-width: 300px;
+}
+
+.estate-tile__thumb img {
+  display: block;
+  max-width: 100%;
+  width: 400px;
+}
+
+.estate-tile__content {
+  /* margin-block-start: 16px; */
+}
+
+.estate-tile__name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-block-end: 8px;
+}
+
+.estate-tile__loc {
+  font-style: italic;
+  color: var(--color-neutral);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 580px) {
+  .estate-tile {
+    align-items: center;
+  }
+
+  .estate-tile__name {
+    text-align: center;
+  }
+
+  .estate-tile__loc {
+    text-align: center;
+  }
+}
